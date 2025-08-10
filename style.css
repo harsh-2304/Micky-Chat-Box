@@ -1,69 +1,122 @@
 body {
-  background-color: #ffeecc;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background: url('mn.jpg') no-repeat center center/cover;
+background-color: #ffeecc;
+font-family: 'Comic Sans MS', cursive, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+position: relative;
+overflow: hidden;
+}
+body::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: url('mn.jpg') no-repeat center center/cover;
+filter: blur(8px);
+z-index: -1;
 }
 .chat-container {
-  width: 400px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+width: 400px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+overflow: hidden;
 }
 .header {
-  color: white;
-  padding: 20px;
-  text-align: center;
-  background: url('ab.jpg') no-repeat center center/cover;
+color: white;
+padding: 20px;
+text-align: center;
+background: url('ab.jpg') no-repeat center center/cover;
 }
 .avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-bottom: 10px;
 }
 .chat-box {
-  padding: 20px;
-  height: 300px;
-  overflow-y: auto;
-  background: url('jk.jpg') no-repeat center center/cover;
+padding: 20px;
+height: 300px;
+overflow-y: auto;
+background: url('jk.jpg') no-repeat center center/cover;
 }
 .message {
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  max-width: 80%;
+margin-bottom: 10px;
+padding: 10px;
+border-radius: 10px;
+max-width: 80%;
 }
 .user {
-  background-color: #d4f1f4;
-  text-align: right;
+background-color: #d4f1f4;
+text-align: right;
 }
 .mickey {
-  background-color: #ffe0e0;
-  font-weight: bold;
+background-color: #ffe0e0;
+font-weight: bold;
 }
 .input-area {
-  display: flex;
-  padding: 10px;
-  background-color: #110707;
+display: flex;
+padding: 10px;
+background-color: #110707;
 }
 .input-area input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  margin: 0 10px;
+flex: 1;
+padding: 10px;
+border: none;
+border-radius: 20px;
+margin: 0 10px;
 }
 .input-area button {
-  border: none;
-  background: url('ab.jpg') no-repeat center center/cover;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
+border: none;
+background: url('ab.jpg') no-repeat center center/cover;
+color: white;
+padding: 10px 20px;
+border-radius: 20px;
+cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+body {
+height: auto;
+padding: 10px;
+}
+.chat-container 
+{
+width: 100%;
+max-width: 100%;
+height: 100vh;
+border-radius: 0;
+}
+.header 
+{
+padding: 15px;
+font-size: 18px;
+}
+.avatar 
+{
+width: 40px;
+height: 40px;
+}
+.chat-box 
+{
+padding: 10px;
+height: calc(100vh - 150px);
+}
+.input-area 
+{
+padding: 5px;
+}
+.input-area input {
+padding: 8px;
+margin: 0 5px;
+}
+.input-area button 
+{
+padding: 8px 12px;
+font-size: 14px;
+}
 }
