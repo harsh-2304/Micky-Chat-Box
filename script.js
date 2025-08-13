@@ -23,7 +23,7 @@ const offlineReplies = [
 "Arre haan! Main bhi yahi soch raha tha! ",
 "Wah, badi jaldi seekh gaya tu! ",
 "Oh ho! Ye toh surprise ho gaya! ",
-"Chal milte hai phir jaldi, dost! "
+"Chal milte hai phir jaldi, dost! ",
 "Aapko Kya Pasand Hai?",
 "Mujhe Aapse Baat Karke Bahut Khushi Hui!",
 "Ok, Ab Main Chalta Hoon, Phir Milte Hai!"
@@ -82,4 +82,5 @@ function startVoice() {
  sendMessage();
 };
 }
+
 
