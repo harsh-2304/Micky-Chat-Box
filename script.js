@@ -6,6 +6,24 @@ const offlineReplies = [
 "Aapka Din Kaisa Ja Raha Hai?",
 "Aapko Kya Pasand Hai?",
 "Aapka Favorite Cartoon Kya Hai?",
+"Arre wah! Ye toh mast idea hai! ",
+"Ha-ha! Tu toh kamaal ka dost hai! ",
+"Oh boy! Ye sun ke maza aa gaya! ",
+"Bhai, tu toh genius nikla! ",
+"Gosh! Ye toh interesting baat hai! ",
+"Arre yaar, tum toh mast ho! ",
+"Golly! Aisa maine kabhi socha hi nahi! ",
+"Wah bhai, dil jeet liya! ",
+"Oh wow! Tere saath baat karke maza aata hai! ",
+"Shukriya yaar, tu bahut sweet hai! ",
+"Chal theek hai, main ready hoon! ",
+"Kya baat hai! Maza aagaya sunke! ",
+"Acha, ye toh interesting twist hai! ",
+"Tu hamesha itna funny kaise rehta hai? ",
+"Arre haan! Main bhi yahi soch raha tha! ",
+"Wah, badi jaldi seekh gaya tu! ",
+"Oh ho! Ye toh surprise ho gaya! ",
+"Chal milte hai phir jaldi, dost! "
 "Aapko Kya Pasand Hai?",
 "Mujhe Aapse Baat Karke Bahut Khushi Hui!",
 "Ok, Ab Main Chalta Hoon, Phir Milte Hai!"
@@ -64,3 +82,4 @@ function startVoice() {
  sendMessage();
 };
 }
+
